@@ -1,0 +1,182 @@
+# Created at 2022-05-16T15:41:20.391
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (1136@Inggrit):
+"Forwarding newSession on session null to remote" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@15.0.2/sun.nio.ch.Net.poll(Native Method)
+        at java.base@15.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+        at java.base@15.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+        at java.base@15.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+        at java.base@15.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+        at java.base@15.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+        at java.base@15.0.2/java.net.Socket$SocketInputStream.read(Socket.java:981)
+        at app//okio.Okio$2.read(Okio.java:140)
+        at app//okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+        at app//okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+        at app//okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+        at app//okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+        at app//okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+        at app//okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+        at app//org.openqa.selenium.remote.internal.OkHttpClient$Factory$1.lambda$createClient$1(OkHttpClient.java:152)
+        at app//org.openqa.selenium.remote.internal.OkHttpClient$Factory$1$$Lambda$631/0x00000001003cd168.intercept(Unknown Source)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+        at app//okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+        at app//okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+        at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+        at app//okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+        at app//okhttp3.RealCall.execute(RealCall.java:77)
+        at app//org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+        at app//io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+        at app//io.appium.java_client.remote.AppiumCommandExecutor$$Lambda$802/0x000000010043df58.execute(Unknown Source)
+        at app//org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+        at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+        at java.base@15.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@15.0.2/java.lang.reflect.Method.invoke(Method.java:564)
+        at app//io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+        at app//io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+        at app//io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+        at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+        at app//io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+        at app//io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+        at app//io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+        at app//org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+        at app//io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+        at app//org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+        at app//io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+        at app//io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+        at app//io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:99)
+        at app//io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:97)
+        at app/sample.mobile.automation@1.0-SNAPSHOT/com.example.app.drivers.AndroidDriverInit.initialize(AndroidDriverInit.java:23)
+        at app/sample.mobile.automation@1.0-SNAPSHOT/com.example.hooks.AndroidDriverHook.before(AndroidDriverHook.java:14)
+        at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@15.0.2/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+        at java.base@15.0.2/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@15.0.2/java.lang.reflect.Method.invoke(Method.java:564)
+        at app//io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+        at app//io.cucumber.java.Invoker.invoke(Invoker.java:24)
+        at app//io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+        at app//io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+        at app//io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+        at app//io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+        at app//io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+        at app//io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+        at app//io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+        at app//io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+        at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+        at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+        at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+        at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at app//io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)
+        at app//io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)
+        at app//org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at app//org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at app//io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:262)
+        at app//org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at app//org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+        at app//org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+        at app//org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+        at app//org.junit.vintage.engine.VintageTestEngine$$Lambda$406/0x0000000100285478.accept(Unknown Source)
+        at java.base@15.0.2/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+        at java.base@15.0.2/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+        at java.base@15.0.2/java.util.Iterator.forEachRemaining(Iterator.java:133)
+        at java.base@15.0.2/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+        at java.base@15.0.2/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+        at java.base@15.0.2/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+        at java.base@15.0.2/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+        at java.base@15.0.2/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@15.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@15.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+        at java.base@15.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@15.0.2/java.lang.Object.wait(Native Method)
+        at java.base@15.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@15.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@15.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@15.0.2/java.lang.Object.wait(Native Method)
+        at java.base@15.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@15.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+        at java.base@15.0.2/java.lang.Thread.run(Thread.java:832)
+        at java.base@15.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@15.0.2/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@15.0.2/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:649)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$400(ForkedBooter.java:82)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:340)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:423)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:435)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:388)
+        at java.base@15.0.2/java.lang.Thread.run(Thread.java:832)
+
+"ForkJoinPool.commonPool-worker-3" 
+   java.lang.Thread.State: WAITING
+        at java.base@15.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@15.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+        at java.base@15.0.2/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1633)
+        at java.base@15.0.2/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+"OkHttp ConnectionPool" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@15.0.2/java.lang.Object.wait(Native Method)
+        at java.base@15.0.2/java.lang.Object.wait(Object.java:455)
+        at app//okhttp3.ConnectionPool$1.run(ConnectionPool.java:67)
+        at java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+        at java.base@15.0.2/java.lang.Thread.run(Thread.java:832)
+
+"Okio Watchdog" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@15.0.2/java.lang.Object.wait(Native Method)
+        at java.base@15.0.2/java.lang.Object.wait(Object.java:455)
+        at app//okio.AsyncTimeout.awaitTimeout(AsyncTimeout.java:361)
+        at app//okio.AsyncTimeout$Watchdog.run(AsyncTimeout.java:312)
+
+"OkHttp ConnectionPool" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@15.0.2/java.lang.Object.wait(Native Method)
+        at java.base@15.0.2/java.lang.Object.wait(Object.java:455)
+        at app//okhttp3.ConnectionPool$1.run(ConnectionPool.java:67)
+        at java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+        at java.base@15.0.2/java.lang.Thread.run(Thread.java:832)
+
+
+
