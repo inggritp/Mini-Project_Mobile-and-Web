@@ -55,7 +55,4 @@ public class basePageObject {
         find(locator).clear();
     }
 
-
-
-
 }
