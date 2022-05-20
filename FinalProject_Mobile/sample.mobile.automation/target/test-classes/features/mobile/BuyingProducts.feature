@@ -16,9 +16,8 @@ Feature: Buying Products
     Then I validate the quantity of products in my cart increased
 
 
-#  Scenario: Buying item using scroll action
-#    Given I am on login page for buying product
-#    And I directed to product page
-#    When I do scroll and click BELI button on one product
-#    Then I validate the quantity of products in my cart increased
-
+  Scenario: Buying item using scroll action
+    Given I am on login page for buying product
+    And I directed to product page
+    When I do scroll and click BELI button on one product
+    Then I validate the product and it's quantity in my cart increased

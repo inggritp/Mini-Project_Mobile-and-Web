@@ -57,16 +57,21 @@ public class RegisterSteps {
     }
 
     @Then("I get {string}")
-    public void iGet(String Result) {
+    public void iGet(String Result)throws Exception {
         if(Result.equals("product_page")){
+            Thread.sleep(600);
             loginpage.productLabelDisplayed();
         } else if(Result.equals("Gagal :(")){
+            Thread.sleep(600);
             registpage.verifyRegisteredEmail();
         } else if (Result.equals("fullname can not empty")){
+            Thread.sleep(600);
             registpage.verifyFullnameNull();
         } else if(Result.equals("email can not empty")){
+            Thread.sleep(600);
             registpage.verifyEmailNull();
         } else {
+            Thread.sleep(600);
             registpage.verifyPasswordNull();
         }
     }
@@ -85,7 +90,8 @@ public class RegisterSteps {
     }
 
     @Then("All the error meesages appear")
-    public void allTheErrorMeesagesAppear() {
+    public void allTheErrorMeesagesAppear() throws Exception {
+        Thread.sleep(1000);
         registpage.verifyFullnameNull();
         registpage.verifyPasswordNull();
         registpage.verifyEmailNull();

@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Register" skipped="0" tests="6" time="257.12" timestamp="2022-05-19 02:46:33"><testcase name="Register"/><testcase name="When i don't input anything in all register field"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Register" skipped="0" tests="6" time="193.53" timestamp="2022-05-20 02:52:13"><testcase name="Register"/><testcase name="When i don't input anything in all register field"/></testsuite>

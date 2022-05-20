@@ -35,7 +35,8 @@ public class loginPage extends basePageObject {
     public void clickLogoutButton(){
         click(logoutButton());
     }
-    public void inputEmail(String email){
+    public void inputEmail(String email) throws Exception{
+        Thread.sleep(600);
         type(emailField(),email);
 
     }
@@ -46,13 +47,16 @@ public class loginPage extends basePageObject {
         click(loginButton());
     }
 
-    public void passwordNullDisplayed(){
+    public void passwordNullDisplayed() throws Exception{
+        Thread.sleep(800);
         Assertions.assertTrue(find(passwordNull()).isDisplayed());
     }
-    public void emailNullDisplayed(){
+    public void emailNullDisplayed() throws Exception{
+        Thread.sleep(800);
         Assertions.assertTrue(find(emailNull()).isDisplayed());
     }
-    public void invalidEmailOrPasswordDisplayed(){
+    public void invalidEmailOrPasswordDisplayed() throws Exception{
+        Thread.sleep(600);
         Assertions.assertTrue(find(passwordorEmailInvallid()).isDisplayed());
     }
     public void productLabelDisplayed(){

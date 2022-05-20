@@ -67,7 +67,8 @@ public class registerPage extends basePageObject {
     public void inputPassword(String Password){
         type(passwordField(),Password);
     }
-    public void verifyFullnameNull(){
+    public void verifyFullnameNull() throws Exception{
+        Thread.sleep(1000);
         Assertions.assertTrue(findId(fullnameNull()).isDisplayed());
     }
     public void verifyEmailNull(){

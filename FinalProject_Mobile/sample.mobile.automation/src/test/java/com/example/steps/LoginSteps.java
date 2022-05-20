@@ -45,14 +45,18 @@ public class LoginSteps {
     }
 
     @Then("I get the {string}")
-    public void iGetThe(String result) {
+    public void iGetThe(String result) throws Exception {
         if (result.equals("product_page")){
+            Thread.sleep(880);
             loginpage.productLabelDisplayed();
         } else if (result.equals("Email atau password tidak valid")){
+            Thread.sleep(880);
             loginpage.invalidEmailOrPasswordDisplayed();
         } else if (result.equals("passsword can not be empty")){
+            Thread.sleep(880);
             loginpage.passwordNullDisplayed();
         } else {
+            Thread.sleep(880);
             loginpage.emailNullDisplayed();
         }
 
@@ -70,7 +74,7 @@ public class LoginSteps {
     }
 
     @Then("the all the error messages appear")
-    public void theAllTheErrorMessagesAppear() {
+    public void theAllTheErrorMessagesAppear() throws Exception {
         loginpage.passwordNullDisplayed();
         loginpage.emailNullDisplayed();
     }

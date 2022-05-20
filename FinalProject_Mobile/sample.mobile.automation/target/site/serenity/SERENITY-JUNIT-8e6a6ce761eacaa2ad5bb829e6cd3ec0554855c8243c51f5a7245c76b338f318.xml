@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Buying Products" skipped="0" tests="2" time="84.94" timestamp="2022-05-19 04:37:03"><testcase name="Buying first product"/><testcase name="Buying second product"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Buying Products" skipped="0" tests="3" time="105.01" timestamp="2022-05-20 02:46:52"><testcase name="Buying first product"/><testcase name="Buying second product"/><testcase name="Buying item using scroll action"/></testsuite>
