@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Product","Buy first product","SUCCESS","2022-05-18T15:54:06.2931498+07:00[Asia/Jakarta]","0.0","21.28"
+"Product","Buy second product","SUCCESS","2022-05-18T15:54:29.1829892+07:00[Asia/Jakarta]","0.0","21.28"
+"Product","When i don't buy anything on product page","SUCCESS","2022-05-18T15:54:51.8739045+07:00[Asia/Jakarta]","0.0","22.82"
+"Product","Using category bar","SUCCESS","2022-05-18T15:55:15.9725483+07:00[Asia/Jakarta]","0.0","24.03"
